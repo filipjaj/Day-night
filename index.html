@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="myImg" src="day.jpg" style="width: 50vw; height: auto;">
+
+
+    <script>
+
+       async  function isNight (image) {
+        
+      
+       
+        var today=new Date()
+        var day_night= await today.getHours()
+        console.log(day_night)
+        
+        if(day_night >= 0 && day_night <= 6){
+            image.src= await "night.jpg"
+        }
+        console.log(myimage)
+    }
+    var myimage = document.getElementById("myImg")
+    myimage.onload =  isNight(myimage)
+   
+
+        </script>
+        
+        
+</body>
+</html>
